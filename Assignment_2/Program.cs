@@ -71,7 +71,7 @@ namespace Assingment
                             Console.WriteLine("Total available Items "); Console.WriteLine();
                             foreach (Item item in itemList)
                             {
-                                Console.WriteLine("[item id is :{" + item.id + "} Name of an Item is:{" + item.name + "} Price of an Item is:{" + item.price + "} Quantity of an Item is:{" + item.quantity + "}]");
+                                Console.WriteLine("[item id :" + item.id + " Item Name :" + item.name + " Item price :" + item.price + " Item Quantity :" + item.quantity + "]");
 
                             }
                             break;
@@ -130,15 +130,19 @@ namespace Assingment
         static void itemm()
         {
             Item ii = new Item();
-            Console.WriteLine("Enter the Id name of the Item");
+            Console.Write("Enter the Id name of the Item");
+            Console.WriteLine();
             ii.id = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the name of the Item");
+            Console.Write("Enter the name of the Item");
+            Console.WriteLine();
             ii.name = Console.ReadLine();
 
-            Console.WriteLine("Enter the price of the item");
+            Console.Write("Enter the price of the item");
+            Console.WriteLine();
             ii.price = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Enter the Quantity of the item");
+            Console.Write("Enter the Quantity of the item");
+            Console.WriteLine();
             ii.quantity = Convert.ToDouble(Console.ReadLine());
 
             itemList.Add(new Item(ii.id, ii.name, ii.price, ii.quantity));
