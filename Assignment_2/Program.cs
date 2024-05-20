@@ -130,19 +130,19 @@ namespace Assingment
         static void itemm()
         {
             Item ii = new Item();
-            Console.Write("Enter the Id name of the Item");           
+            Console.Write("Enter the Id name of the Item :");           
             ii.id = Convert.ToInt32(Console.ReadLine());
              Console.WriteLine();
             
-            Console.Write("Enter the name of the Item");
+            Console.Write("Enter the name of the Item :");
             ii.name = Console.ReadLine();
              Console.WriteLine();
 
-            Console.Write("Enter the price of the item");
+            Console.Write("Enter the price of the item :");
             ii.price = Convert.ToDouble(Console.ReadLine());
              Console.WriteLine();
 
-            Console.Write("Enter the Quantity of the item");
+            Console.Write("Enter the Quantity of the item :");
             ii.quantity = Convert.ToDouble(Console.ReadLine());
              Console.WriteLine();
 
