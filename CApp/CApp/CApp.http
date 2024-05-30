@@ -1,0 +1,6 @@
+@CApp_HostAddress = http://localhost:5155
+
+GET {{CApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
